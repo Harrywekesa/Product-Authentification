@@ -82,17 +82,17 @@ def CreateVQRCode(data, destination_address):
 
     N:Lastname;Surname
 
-    FN:TAHER
+    FN:Pi
 
-    ORG:EVenX
+    ORG:Pi
 
-    URL:URL HERE
+    URL:www.piseeds.com
 
-    EMAIL:SOME@EMAIL.COM
+    EMAIL:piseeds@gMAIL.COM
 
-    TEL;TYPE=voice,work,pref:+49 1234 56788
+    TEL;TYPE=voice,work,pref:+254741947264
 
-    ADR;TYPE=intl,work,postal,parcel:;;Wallstr. 1;Tehran;;12345;Iran
+    ADR;TYPE=intl,work,postal,parcel:;;Wallstr. 1;Kitale;;12345;Kenya
 
     END:VCARD '''
 
@@ -112,21 +112,21 @@ startstring = "TAHER21-C0382C01-AAA"
 data = CreateRandomTrackingNumber(start, stop, totalsample, startstring)
 
 
-address = 'G:\Google\Electronic Design\python_projects\Product Authentification\Excel\AAA/'
+address = r'/home/harry/Documents/Product_Authentification/Excel/AAA/'
 contract = 'C0382C01'
 
 SaveTrackingAsExcel(data, address, contract)
 
 message = '''
-https://wa.me/989033335009
+https://wa.me/+254741947264
 
 Important Instruction:
 
-Please copy code below in the given whatsapp link for authentification of your product from Taher Agroindustrial Group. 
+Please copy code below in the given whatsapp link for authentification of your product from Pi Seeds Group. 
 
 Code: '''
 
-destination_address = "G:\Google\Electronic Design\python_projects\Product Authentification\QRCodes\AAA/"
+destination_address = r"/home/harry/Documents/Product_Authentification/QRCodes/AAA/"
 SimpleCreateQRCodes(data, message, destination_address)
 
 print('All {} QRCodes are created..'.format(totalsample))
